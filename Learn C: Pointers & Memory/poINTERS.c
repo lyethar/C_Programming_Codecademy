@@ -22,8 +22,11 @@ int main() {
   double* dblPtr = &dblVar;
 
   // Printing out adress of the pointer holding hte address to the dblVar
+  
   printf("%p\n" , dblPtr);
 
-  // Print out the variable contents of the original variable based on its memory address. 
+  // Print out the variable contents of the original variable based on its memory address.
+  // Dereferencing allows us to use the pointer as a normal variable by using the * operator.
+  // You could modify the pointer by also doing *dblPtr = 200;  
   printf("%lf\n", *dblPtr );
 }
